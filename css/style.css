@@ -52,10 +52,102 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   width: 113.5rem;
   margin: 0 auto;
 }
+
+/*сетка*/
+@media (max-width: 108em) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 105em) {
+  html {
+    font-size: 8.75px;
+  }
+}
+
+@media (max-width: 91.5em) {
+  html {
+    font-size: 7.9px;
+  }
+}
+
+@media (max-width: 91em) {
+  html {
+    font-size: 8.4px;
+  }
+}
+
+@media (max-width: 90em) {
+  html {
+    font-size: 7.9px;
+  }
+}
+
+@media (max-width: 80em) {
+  html {
+    font-size: 7.2px
+  }
+}
+
+@media (max-width: 72em) {
+  html {
+    font-size: 6.5px;
+  }
+}
+
+@media (max-width: 64em) {
+  html {
+    font-size: 5.5px;
+  }
+}
+
+@media (max-width: 44em) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 38em) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 34em) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 26em) {
+  html {
+    font-size: 4.5px;
+  }
+}
+
+@media (max-width: 21em) {
+  html {
+    font-size: 4.4px;
+  }
+}
+
+/*сетка*/
 
 .header {
   position: absolute;
@@ -92,6 +184,10 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
 }
 
+.header__nav-mobile {
+  display: none;
+}
+
 .header__socials-icon {
   display: inline-block;
   width: 1.7rem;
@@ -101,6 +197,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header__socials-icon:not(:last-child) {
   margin-right: 2rem;
+}
+
+.header__menu-close {
+  display: none;
+}
+
+.menu-burger {
+  display: none;
 }
 
 .main {
@@ -175,7 +279,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 13.2rem;
   height: 13.2rem;
   border-radius: 50%;
-  background-color: #391517;
+  background-color: rgba(21, 21, 21, 0.5);
   cursor: pointer;
 }
 
@@ -187,6 +291,11 @@ h1, h2, h3, h4, h5, h6, p {
   height: 10rem;
   border-radius: 50%;
   background-color: #151515;
+}
+
+.main__button-dark img {
+  width: 3.5rem;
+  height: 4rem;
 }
 
 .main__button {
@@ -276,6 +385,112 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 2.5rem;
 }
 
+@media (max-width: 48em) {
+  html {
+    font-size: 10px;
+  }
 
+  .header .container {
+    flex-direction: column;
+  }
 
+  .container {
+    width: 100%;
+    padding: 0 3rem;
+  }
 
+  .header {
+    z-index: 10;
+    display: none;
+    top: 0;
+    transform: translate(-20%, 0);
+    width: 66.7%;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-color: #151515;
+  }
+
+  .header__logo {
+    margin-right: 0;
+    margin-bottom: 3.5rem;
+  }
+
+  .header__menu {
+    flex-direction: column;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__nav-mobile a {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 114%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .header__nav-mobile a:not(:last-child) {
+    margin-bottom: 1.7rem;
+  }
+
+  .header__socials {
+    margin-bottom: 2.2rem;
+  }
+
+  .header__menu-close {
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    cursor: pointer;
+  }
+
+  .menu-burger {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+  }
+  
+  .main {
+    background-position-x: 66%;
+  }
+
+  .main__description-wrap {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .main__button-play {
+    margin: 0;
+  }
+
+  .main__button {
+    margin-bottom: 4.4rem;
+  }
+
+  .main-slider__wrap {
+    max-width: 53.5%;
+  }
+
+  .main-slider__arrow {
+    display: none;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
